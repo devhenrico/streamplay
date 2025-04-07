@@ -1,1 +1,1 @@
-# streamplay
+# StreamPlay
