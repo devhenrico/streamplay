@@ -1,3 +1,13 @@
+document.querySelectorAll('.navBar li').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelectorAll('.navBar li').forEach(li => {
+            li.classList.remove('active');
+        });
+        
+        this.classList.add('active');
+    });
+});
+
 window.addEventListener("scroll", function () {
     const nav = document.querySelector("header nav");
     if (window.scrollY > 0) {
@@ -5,6 +15,22 @@ window.addEventListener("scroll", function () {
     } else {
         nav.classList.remove("navBlur");
     }
+});
+
+const btnTop = document.getElementById("btnTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        btnTop.style.opacity = "1";
+        btnTop.style.visibility = "visible";
+    } else {
+        btnTop.style.opacity = "0";
+        btnTop.style.visibility = "hidden";
+    }
+});
+
+btnTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 const cards = document.querySelectorAll('.cardPlansContainer');
@@ -31,22 +57,6 @@ document.querySelectorAll('.faqQuestion').forEach(button => {
             icon.classList.replace('bx-minus', 'bx-plus');
         }
     });
-});
-
-const btnTop = document.getElementById("btnTop");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-        btnTop.style.opacity = "1";
-        btnTop.style.visibility = "visible";
-    } else {
-        btnTop.style.opacity = "0";
-        btnTop.style.visibility = "hidden";
-    }
-});
-
-btnTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 var animation = lottie.loadAnimation({
