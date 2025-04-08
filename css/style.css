@@ -13,12 +13,12 @@
 :root {
     --color-base: #e21515;
     --color-subbase: #141414;
-    --color-text: #fff;
+    --color-text: #ffffff;
     --color-subtext: #999999;
     --color-black: #0f0f0f;
     --color-subblack: #1A1A1A;
-    --color-subwhite: #ffffff;
     --color-border: #333333;
+    --color-dark: #a11313;
     --color-gradient: linear-gradient(220deg, #e21515 -210%, #0f0f0f 60%);
     --no-color: transparent;
 }
@@ -46,14 +46,14 @@ body {
     border: 5px solid transparent;
     background-clip: content-box;
     border-radius: 20px;
-    transition: all .3s;
+    transition: 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a11313;
+    background-color: var(--color-dark);
     border: 5px solid transparent;
     background-clip: content-box;
-    transition: all .3s;
+    transition: 0.3s ease;
 }
 
 #btnTop {
@@ -74,14 +74,15 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    transition: all .3s;
+    transition: 0.3s ease;
 }
 
     #btnTop:hover {
         transform: translateY(-4px);
-        transition: all .3s;
+        transition: 0.3s ease;
         background: var(--color-border);
     }
+
 /* #endregion */
 
 /* #region menu */
@@ -92,8 +93,8 @@ header {
         width: 100%;
         height: 7em;
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: center;
         transition: backdrop-filter 0.5s ease;
 
         .menu {
@@ -101,10 +102,10 @@ header {
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            transform: translateX(-5em);
+            transform: translateX(-85px);
 
             img {
-                width: 18em;
+                width: 300px;
             }
 
             .navBar {
@@ -137,7 +138,7 @@ header {
                             left: 0;
                             width: 100%;
                             height: 2px;
-                            background: var(--color-subwhite);
+                            background: var(--color-text);
                             border-radius: 50%;
                             transform: scaleX(0);
                             transition: all 0.6s ease;
@@ -187,40 +188,29 @@ header {
                 }
             }
 
-            .login {
+            .icons {
                 li {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    transform: translateX(70px);
+                    transform: translateX(90px);
+                    gap: 30px;
 
-                    a {
+                    & button {
+                      background: none;
+                      border: none;
+                      cursor: pointer;
+
+                      & i {
+                        font-size: 30px;
+                        color: var(--color-subtext);
+                        transition: 0.3s ease;
+                      }
+
+                      & i:hover {
                         color: var(--color-text);
-                        font-weight: bold;
-                        font-size: 16px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 12px;
-                        height: 50px;
-                        padding: 15px;
-                        gap: 5px;
-                        border: 3px solid var(--color-base);
-                        box-shadow: 0 4px 15px var(--color-subblack);
-                        transition: all 0.3s;
-
-                        i {
-                            font-size: 22px;
-                            color: var(--color-text);
-                        }
-
-                        &:hover {
-                            background: var(--color-base);
-                            border: 3px solid var(--color-base);
-                            border-radius: 12px;
-                            color: var(--color-text);
-                            transition: all 0.3s;
-                        }
+                        transition: 0.3s ease;
+                      }
                     }
                 }
             }
@@ -313,7 +303,7 @@ header {
                     top: 0;
                     width: 0;
                     height: 100%;
-                    background: #a11313;
+                    background-color: var(--color-dark);
                     transform: skewX(45deg);
                     z-index: -1;
                     transition: width 1000ms;
@@ -382,7 +372,7 @@ header {
             justify-content: center;
             align-items: center;
             gap: 50px;
-            transition: all .3s;
+            transition: 0.3s ease;
 
             & .cardContainer {
                 background: var(--color-subblack);
@@ -425,7 +415,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    color: var(--color-subwhite);
+                    color: var(--color-text);
                     font-size: 17px;
                     padding: 0 30px;
                 }
@@ -433,27 +423,27 @@ header {
                 & .arrow-animations {
                     width: 35px;
                     height: 35px;
-                    transition: all .3s;
+                    transition: 0.3s ease;
                     padding: 8px;
                     border-radius: 7px;
                     background: var(--color-border);
 
                     & path {
-                        stroke: var(--color-subwhite);
-                        fill: var(--color-subwhite);
+                        stroke: var(--color-text);
+                        fill: var(--color-text);
                     }
                 }
             }
 
             & .cardContainer:hover {
                 transform: scale(1.02);
-                transition: all .3s;
+                transition: 0.3s ease;
             }
         }
 
         .movieCard:has(.cardContainer:hover)>.cardContainer:not(:hover) {
             opacity: 0.5;
-            transition: all .3s;
+            transition: 0.3s ease;
         }
     }
 }
@@ -489,7 +479,7 @@ header {
             justify-content: center;
             align-items: center;
             gap: 50px;
-            transition: all .3s;
+            transition: 0.3s ease;
 
             & .cardContainer {
                 background: var(--color-subblack);
@@ -532,7 +522,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    color: var(--color-subwhite);
+                    color: var(--color-text);
                     font-size: 17px;
                     padding: 0 30px;
                 }
@@ -540,27 +530,27 @@ header {
                 & .arrow-animations {
                     width: 35px;
                     height: 35px;
-                    transition: all .3s;
+                    transition: 0.3s ease;
                     padding: 8px;
                     border-radius: 7px;
                     background: var(--color-border);
 
                     & path {
-                        stroke: var(--color-subwhite);
-                        fill: var(--color-subwhite);
+                        stroke: var(--color-text);
+                        fill: var(--color-text);
                     }
                 }
             }
 
             & .cardContainer:hover {
                 transform: scale(1.02);
-                transition: all .3s;
+                transition: 0.3s ease;
             }
         }
 
         .serieCard:has(.cardContainer:hover)>.cardContainer:not(:hover) {
             opacity: 0.5;
-            transition: all .3s;
+            transition: 0.3s ease;
         }
     }
 }
@@ -638,7 +628,7 @@ header {
 
             & .cardPlatformContainer:hover {
                 transform: translateY(-15px);
-                transition: all .3s;
+                transition: 0.3s ease;
             }
         }
 
@@ -688,7 +678,7 @@ header {
 
             & .cardPlatformContainer:hover {
                 transform: translateY(-15px);
-                transition: all .3s;
+                transition: 0.3s ease;
             }
         }
     }
@@ -734,7 +724,7 @@ header {
                 padding: 2.2em;
                 width: 450px;
                 height: 280px;
-                transition: all .3s;
+                transition: 0.3s ease;
                 margin-bottom: 120px;
 
                 & h1 {
@@ -788,16 +778,16 @@ header {
                         width: 200px;
                         height: 50px;
                         padding: 15px;
-                        transition: all .3s;
+                        transition: 0.3s ease;
                         justify-content: center;
                         align-items: center;
                         background: var(--color-base);
-                        transition: all .3s;
+                        transition: 0.3s ease;
                     }
 
                     & a:hover {
-                        transition: all .3s;
-                        background-color: #a11313;
+                        transition: 0.3s ease;
+                        background-color: var(--color-dark);
                     }
                 }
             }
@@ -805,7 +795,7 @@ header {
             & .cardSubscribeContainer:hover {
                 transform: scale(1.02);
                 background: var(--color-gradient);
-                transition: all .3s;
+                transition: 0.3s ease;
             }
         }
 
@@ -852,12 +842,12 @@ header {
                 height: 50px;
                 padding: 15px;
                 box-shadow: 0 4px 15px var(--color-subblack);
-                transition: transform 0.3s ease;
+                transition: 0.3s ease;
             }
 
             & a:hover {
-                transition: all .3s;
-                background: #a11313;
+                transition: 0.3s ease;
+                background-color: var(--color-dark);
             }
         }
     }
@@ -886,7 +876,7 @@ footer {
                 & h3 {
                     font-size: 16px;
                     margin-bottom: 20px;
-                    color: var(--color-subwhite);
+                    color: var(--color-text);
                 }
 
                 & li {
@@ -899,7 +889,7 @@ footer {
                     }
 
                     & a:hover {
-                        color: var(--color-subwhite);
+                        color: var(--color-text);
                     }
                 }
 
@@ -914,11 +904,11 @@ footer {
                         background: var(--color-subblack);
                         color: var(--color-subtext);
                         border-radius: 8px;
-                        transition: all .3s;
+                        transition: 0.3s ease;
                     }
 
                     & a:hover {
-                        transition: all .3s;
+                        transition: 0.3s ease;
                         color: var(--color-subblack);
                         background: var(--color-subtext);
                     }
@@ -970,7 +960,7 @@ footer {
                 height: 320px;
                 flex-direction: column;
                 text-align: center;
-                transition: all .3s;
+                transition: 0.3s ease;
 
                 & h2 {
                     margin-top: 30px;
@@ -1001,7 +991,7 @@ footer {
 
             & .cardReasons:hover {
                 transform: scale(1.05);
-                transition: all .3s;
+                transition: 0.3s ease;
             }
         }
 
@@ -1113,16 +1103,16 @@ footer {
                             width: 330px;
                             height: 50px;
                             padding: 15px;
-                            transition: all .3s;
+                            transition: 0.3s ease;
                             justify-content: center;
                             align-items: center;
                             background: var(--color-base);
-                            transition: all .3s;
+                            transition: 0.3s ease;
                         }
 
                         & a:hover {
-                            transition: all .3s;
-                            background-color: #a11313;
+                            transition: 0.3s ease;
+                            background-color: var(--color-dark);
                         }
                     }
 
@@ -1189,7 +1179,7 @@ footer {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    transition: all .3s;
+                    transition: 0.3s ease;
                     margin-bottom: 0;
 
                     & h2 {
@@ -1205,7 +1195,7 @@ footer {
 
                 & .faqQuestion:hover {
                     background: var(--color-border);
-                    transition: all .3s;
+                    transition: 0.3s ease;
                 }
 
                 .faqResponse {
