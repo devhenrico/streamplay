@@ -34,7 +34,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 22px;
+    width: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -45,7 +45,7 @@ body {
     background: var(--color-base);
     border: 5px solid transparent;
     background-clip: content-box;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.3s ease;
 }
 
@@ -91,7 +91,7 @@ header {
         position: fixed;
         z-index: 100;
         width: 100%;
-        height: 7em;
+        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -102,10 +102,10 @@ header {
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            transform: translateX(-85px);
+            transform: translateX(-16px);
 
             img {
-                width: 300px;
+                width: 160px;
             }
 
             .navBar {
@@ -193,7 +193,6 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    transform: translateX(90px);
                     gap: 30px;
 
                     & button {
@@ -253,7 +252,7 @@ header {
 
             & span {
                 color: var(--color-base);
-                font-weight: 720;
+                font-weight: 650;
             }
         }
 
@@ -281,10 +280,8 @@ header {
                 justify-content: center;
                 display: flex;
                 border-radius: 8px;
-                width: 190px;
-                height: 50px;
-                padding: 15px;
-                gap: 5px;
+                padding: 15px 20px;
+                gap: 10px;
                 text-align: center;
                 position: relative;
                 overflow: hidden;
@@ -314,7 +311,7 @@ header {
                 }
 
             & i {
-                font-size: 35px;
+                font-size: 22px;
                 color: var(--color-text);
             }
         }
@@ -351,7 +348,7 @@ header {
         align-items: center;
         justify-content: center;
         background-color: var(--color-subbase);
-        padding: 9em;
+        padding: 144px;
 
         & h1 {
             color: var(--color-text);
@@ -390,7 +387,6 @@ header {
                 }
 
                 & .imageWrapper img {
-                    padding: 0.05em;
                     max-width: 78%;
                     height: auto;
                     margin-top: 30px;
@@ -452,13 +448,13 @@ header {
 
 /* #region serie */
 #serie {
-    margin-top: -11em;
+    margin-top: -176px;
 
     & .serieContainer {
         align-items: center;
         justify-content: center;
         background-color: var(--color-subbase);
-        padding: 9em;
+        padding: 144px;
 
         & h1 {
             color: var(--color-text);
@@ -497,7 +493,6 @@ header {
                 }
 
                 & .imageWrapper img {
-                    padding: 0.05em;
                     max-width: 78%;
                     height: auto;
                     margin-top: 30px;
@@ -559,13 +554,13 @@ header {
 
 /* #region platform */
 #platform {
-    margin-top: -11em;
+    margin-top: -176px;
 
     & .platformContainer {
         align-items: center;
         justify-content: center;
         background-color: var(--color-subbase);
-        padding: 9em;
+        padding: 144px;
 
         & h1 {
             color: var(--color-text);
@@ -592,11 +587,11 @@ header {
                 background: var(--color-gradient);
                 border-radius: 12px;
                 box-shadow: 0 4px 15px var(--color-subblack);
-                padding: 2em;
+                padding: 35px;
                 width: 450px;
                 height: 270px;
                 transition: transform 0.3s ease;
-                padding-top: 3.7em;
+                padding-top: 60px;
 
                 & .icon-title {
                     display: flex;
@@ -642,11 +637,11 @@ header {
                 background: var(--color-gradient);
                 border-radius: 12px;
                 box-shadow: 0 4px 15px var(--color-subblack);
-                padding: 2em;
+                padding: 35px;
                 width: 450px;
                 height: 270px;
                 transition: transform 0.3s ease;
-                padding-top: 3.7em;
+                padding-top: 60px;
 
                 & .icon-title {
                     display: flex;
@@ -688,13 +683,13 @@ header {
 
 /* #region subscribe */
 #subscribe {
-    margin-top: -11em;
+    margin-top: -176px;
 
     & .subscribeContainer {
         align-items: center;
         justify-content: center;
         background-color: var(--color-subbase);
-        padding: 9em;
+        padding: 144px;
 
         & h1 {
             color: var(--color-text);
@@ -721,7 +716,7 @@ header {
                 border: 1px solid var(--color-border);
                 border-radius: 12px;
                 box-shadow: 0 4px 15px var(--color-subblack);
-                padding: 2.2em;
+                padding: 35px;
                 width: 450px;
                 height: 280px;
                 transition: 0.3s ease;
@@ -760,7 +755,7 @@ header {
                     & span {
                         font-size: 17px;
                         color: var(--color-subtext);
-                        font-weight: 720;
+                        font-weight: 650;
                     }
                 }
 
@@ -806,7 +801,6 @@ header {
             height: 350px;
             width: auto;
             border-radius: 8px;
-            padding: 3em;
             align-items: center;
             display: flex;
             border: 1px solid var(--color-border);
@@ -820,7 +814,7 @@ header {
 
                 & span {
                     color: var(--color-base);
-                    font-weight: 720;
+                    font-weight: 650;
                 }
             }
 
@@ -838,9 +832,7 @@ header {
                 font-size: 16px;
                 display: flex;
                 border-radius: 8px;
-                width: 208px;
-                height: 50px;
-                padding: 15px;
+                padding: 15px 20px;
                 box-shadow: 0 4px 15px var(--color-subblack);
                 transition: 0.3s ease;
             }
@@ -924,6 +916,7 @@ footer {
             border-top: 1px solid var(--color-subblack);
             padding-top: 20px;
             height: 100px;
+            padding-left: 30px;
 
             & h2 {
                 color: var(--color-subtext);
@@ -996,7 +989,7 @@ footer {
         }
 
         & .plansCardContainer {
-            margin-top: 5em;
+            margin-top: 80px;
 
             & .textContainer {
                 align-items: center;
@@ -1017,7 +1010,7 @@ footer {
                     font-size: 17px;
                     color: var(--color-subtext);
                     margin-bottom: 50px;
-                    font-weight: 600;
+                    font-weight: 500;
                     line-height: 1.5;
                 }
             }
@@ -1035,20 +1028,18 @@ footer {
                     border-radius: 12px;
                     display: flex;
                     flex-direction: column;
-                    padding: 1.5em;
+                    padding: 24px;
                     width: 370px;
-                    height: 550px;
                     transition: box-shadow 0.3s ease;
                     cursor: pointer;
 
                     & img {
                         width: 45%;
-                        margin-top: -10px;
-                        transform: translateX(-32px);
+                        transform: translateX(-2px);
                     }
 
                     & h1 {
-                        margin-top: -10px;
+                        margin-top: 5px;
                         color: var(--color-base);
                         font-size: 32px;
                         margin-bottom: 10px;
@@ -1145,7 +1136,7 @@ footer {
 
                 & span {
                     color: var(--color-base);
-                    font-weight: 720;
+                    font-weight: 650;
                 }
             }
 

@@ -1,11 +1,52 @@
-document.querySelectorAll('.navBar li').forEach(item => {
-    item.addEventListener('click', function() {
-        document.querySelectorAll('.navBar li').forEach(li => {
-            li.classList.remove('active');
-        });
-        
-        this.classList.add('active');
+document.addEventListener("DOMContentLoaded", () => {
+  const navItems = document.querySelectorAll('.navBar li');
+  const sections = document.querySelectorAll("section[id]");
+  const isPlansPage = window.location.pathname.includes("plans.html");
+
+  let clickedByUser = false;
+
+  if (isPlansPage) {
+    navItems.forEach(li => li.classList.remove('active'));
+    const subscribeItem = document.querySelector('.navBar li:last-child');
+    if (subscribeItem) {
+      subscribeItem.classList.add('active');
+    }
+    return;
+  }
+
+  navItems.forEach(item => {
+    item.addEventListener('click', function () {
+      clickedByUser = true;
+
+      navItems.forEach(li => li.classList.remove('active'));
+      this.classList.add('active');
+
+      setTimeout(() => {
+        clickedByUser = false;
+      }, 1000);
     });
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    if (!clickedByUser) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+
+          navItems.forEach(li => li.classList.remove("active"));
+
+          const current = document.querySelector(`.navBar li a[href="#${id}"]`);
+          if (current) {
+            current.parentElement.classList.add("active");
+          }
+        }
+      });
+    }
+  }, {
+    threshold: 0.6
+  });
+
+  sections.forEach(section => observer.observe(section));
 });
 
 window.addEventListener("scroll", function () {
