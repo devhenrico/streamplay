@@ -1,483 +1,513 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- favIcon -->
-    <link rel="shortcut icon" href="./img/logo-pequeno.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./img/logo-pequeno.png"
+      type="image/x-icon"
+    />
     <!-- boxIcons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- fontAwesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- lottieWeb -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Início | StreamPlay</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- header -->
     <header>
+      <button id="btnTop"><i class="fa-solid fa-caret-up"></i></button>
 
-        <button id="btnTop"><i class="fa-solid fa-caret-up"></i></button>
-
-        <nav data-aos="fade-down" data-aos-duration="1500">
-            <div class="menu">
-                <div class="logo">
-                    <a href="#home">
-                        <img src="./img/logo.png" alt="streamplay">
-                    </a>
-                </div>
-                <ul class="navBar">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#movie">Filmes</a></li>
-                    <li><a href="#serie">Séries</a></li>
-                    <li><a href="#platform">Plataformas</a></li>
-                    <li><a href="#subscribe">Assine Agora</a></li>
-                </ul>
-                <ul class="icons">
-                    <li>
-                        <button><i class='bx bx-search'></i></button>
-                        <button><i class='bx bx-bell'></i></button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav data-aos="fade-down" data-aos-duration="1500">
+        <div class="menu">
+          <div class="logo">
+            <a href="#home">
+              <img src="./img/logo.png" alt="streamplay" />
+            </a>
+          </div>
+          <ul class="navBar">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#movie">Filmes</a></li>
+            <li><a href="#serie">Séries</a></li>
+            <li><a href="#platform">Plataformas</a></li>
+            <li><a href="#subscribe">Assine Agora</a></li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <button><i class="bx bx-search"></i></button>
+              <button><i class="bx bx-bell"></i></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <!-- home -->
+      <section id="home">
+        <div class="homeContainer">
+          <ul>
+            <li data-aos="fade-up" data-aos-duration="1500">
+              <img src="./img/logo-grande.png" alt="logo" />
+              <h1>
+                A melhor experiência de <span>Streaming</span> ao seu alcance
+              </h1>
+              <p>
+                StreamPlay oferece a melhor experiência de streaming para curtir
+                seus filmes e séries favoritos sob demanda, a qualquer hora e em
+                qualquer lugar. Com uma ampla variedade de conteúdos, desde os
+                lançamentos mais aguardados até clássicos inesquecíveis e séries
+                populares, você terá entretenimento de qualidade ao alcance de
+                um clique, com reprodução fluida e qualidade de imagem
+                impressionante!
+              </p>
+              <div class="buttonPlay">
+                <a href="#movie"
+                  ><i class="fa-solid fa-play"></i>Descubra Mais</a
+                >
+              </div>
+              <div class="downArrow">
+                <a href="#movie"><div id="arrow-animation"></div></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <!-- home -->
-        <section id="home">
-            <div class="homeContainer">
-                <ul>
-                    <li data-aos="fade-up" data-aos-duration="1500">
-                        <img src="./img/logo-grande.png" alt="logo">
-                        <h1>A melhor experiência de <span>Streaming</span> ao seu alcance</h1>
-                        <p>
-                            StreamPlay oferece a melhor experiência de streaming para curtir seus filmes e séries
-                            favoritos sob demanda, a qualquer hora e em qualquer lugar. Com uma ampla variedade de
-                            conteúdos, desde os lançamentos mais aguardados até clássicos inesquecíveis e séries
-                            populares, você terá entretenimento de qualidade ao alcance de um clique, com reprodução
-                            fluida e qualidade de imagem impressionante!
-                        </p>
+      <!-- movie -->
+      <section id="movie">
+        <div class="movieContainer">
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <h1>Descubra o Melhor do Cinema</h1>
+            <p>
+              Explore uma coleção incrível com milhares de filmes, desde os
+              maiores clássicos do cinema até os lançamentos mais recentes que
+              estão dando o que falar
+            </p>
+          </div>
+          <div class="movieCard" data-aos="fade-up" data-aos-duration="3000">
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/filme-acao.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Ação<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/filme-comedia.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Comédia<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/filme-ficcao.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Ficcção Científica<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/filme-romance.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Romance<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/filme-terror.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Terror<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      <!-- serie -->
+      <section id="serie">
+        <div class="serieContainer">
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <h1>Maratonas Garantidas</h1>
+            <p>
+              De dramas emocionantes a comédias inesquecíveis, encontre séries
+              que vão te prender do primeiro ao último episódio, prontas para
+              serem maratonadas
+            </p>
+          </div>
+          <div class="serieCard" data-aos="fade-up" data-aos-duration="3000">
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/serie-acao.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Ação<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/serie-comedia.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Comédia<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/serie-ficcao.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Ficcção Científica<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/serie-romance.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Romance<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+            <ul class="cardContainer">
+              <a href="plans.html">
+                <li>
+                  <div class="imageWrapper">
+                    <img src="./img/serie-terror.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <h2>Terror<i class="arrow-animations"></i></h2>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-                        <div class="buttonPlay">
-                            <a href="#movie"><i class="fa-solid fa-play"></i>Descubra Mais</a>
-                        </div>
-                        <div class="downArrow">
-                            <a href="#movie"><div id="arrow-animation"></div></a>
-                        </div>
-                    </li>
-                </ul>
+      <!-- platform -->
+      <section id="platform">
+        <div class="platformContainer">
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <h1>Assista Onde e Quando Quiser</h1>
+            <p>
+              Seja no conforto do sofá ou em qualquer lugar do mundo, nosso
+              serviço é compatível com celulares, smart TVs, tablets, consoles e
+              muito mais.
+            </p>
+          </div>
+          <div
+            class="platformCardTop"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <ul class="cardPlatformContainer">
+              <li class="icon-title">
+                <i class="bx bx-mobile-alt"></i>
+                <h2>Celular</h2>
+              </li>
+              <li>
+                <p>
+                  Assista aos seus filmes e séries onde quer que esteja com a
+                  melhor qualidade de imagem e som. Com o StreamPlay no seu
+                  celular, você tem entretenimento a qualquer hora
+                </p>
+              </li>
+            </ul>
+            <ul class="cardPlatformContainer">
+              <li class="icon-title">
+                <i class="bx bx-desktop"></i>
+                <h2>Computador</h2>
+              </li>
+              <li>
+                <p>
+                  No seu computador, o StreamPlay oferece uma experiência de
+                  streaming prática e rápida, com acesso ao nosso catálogo de
+                  filmes e séries, tudo na alta qualidade
+                </p>
+              </li>
+            </ul>
+            <ul class="cardPlatformContainer">
+              <li class="icon-title">
+                <i class="bx bx-joystick"></i>
+                <h2>Console de Jogos</h2>
+              </li>
+              <li>
+                <p>
+                  Transforme seu console de jogos em uma central de
+                  entretenimento. Acesse filmes e séries com qualidade, direto
+                  na tela da sua TV, de forma simples e rápida
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="platformCardBottom"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <ul class="cardPlatformContainer">
+              <li class="icon-title">
+                <i class="bx bx-laptop"></i>
+                <h2>Notebook</h2>
+              </li>
+              <li>
+                <p>
+                  Com o StreamPlay no seu notebook, você tem a liberdade de
+                  assistir a conteúdos em qualquer lugar, com uma tela maior e
+                  qualidade de imagem e som excepcionais
+                </p>
+              </li>
+            </ul>
+            <ul class="cardPlatformContainer">
+              <li class="icon-title">
+                <i class="bx bx-tv"></i>
+                <h2>Smart TV</h2>
+              </li>
+              <li>
+                <p>
+                  O StreamPlay na sua Smart TV oferece uma experiência de alta
+                  qualidade e navegação fácil, para você assistir aos seus
+                  conteúdos favoritos com conforto
+                </p>
+              </li>
+            </ul>
+            <ul class="cardPlatformContainer">
+              <li class="icon-title">
+                <i class="bx bx-tab"></i>
+                <h2>Tablet</h2>
+              </li>
+              <li>
+                <p>
+                  No tablet, o StreamPlay combina mobilidade e conforto,
+                  oferecendo uma ótima experiência de streaming com qualidade,
+                  seja em casa ou em qualquer lugar
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- subscribe -->
+      <section id="subscribe">
+        <div class="subscribeContainer">
+          <div data-aos="fade-right" data-aos-duration="1500">
+            <h1>Experimente o Melhor do Entretenimento</h1>
+            <p id="testFree">
+              Não perca mais tempo! Escolha o plano ideal para você e tenha
+              acesso imediato ao catálogo completo de filmes e séries de alta
+              qualidade
+            </p>
+          </div>
+          <div class="subscribeCard">
+            <div data-aos="flip-left" data-aos-duration="1500">
+              <ul class="cardSubscribeContainer">
+                <li>
+                  <h1>Plano Básico</h1>
+                </li>
+                <li class="check-text">
+                  <i class="bx bx-check"></i>
+                  <h3>Qualidade de streaming em HD</h3>
+                </li>
+                <li class="check-text">
+                  <i class="bx bx-check"></i>
+                  <h3>Transmissão em 1 dispositivo simultâneo</h3>
+                </li>
+                <li>
+                  <h2>R$ 19,90 <span>/mês</span></h2>
+                </li>
+                <div class="buttonContainer">
+                  <a href="plans.html">Saiba Mais</a>
+                </div>
+              </ul>
             </div>
-        </section>
-
-        <!-- movie -->
-        <section id="movie">
-            <div class="movieContainer">
-                <ul>
-                    <li data-aos="fade-right" data-aos-duration="1500">
-                        <h1>Descubra o Melhor do Cinema</h1>
-                        <p>
-                            Explore uma coleção incrível com milhares de filmes, desde os maiores clássicos do cinema até
-                            os lançamentos mais recentes que estão dando o que falar
-                        </p>
-                    </li>
-                </ul>
-                <div class="movieCard" data-aos="fade-up" data-aos-duration="3000">
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/filme-acao.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Ação<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/filme-comedia.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Comédia<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/filme-ficcao.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Ficcção Científica<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/filme-romance.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Romance<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/filme-terror.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Terror<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
+            <div data-aos="flip-left" data-aos-duration="1500">
+              <ul class="cardSubscribeContainer">
+                <li>
+                  <h1>Plano Premium</h1>
+                </li>
+                <li class="check-text">
+                  <i class="bx bx-check"></i>
+                  <h3>Acesso a todo o catálogo de filmes e séries</h3>
+                </li>
+                <li class="check-text">
+                  <i class="bx bx-check"></i>
+                  <h3>Qualidade de streaming em Full HD</h3>
+                </li>
+                <li>
+                  <h2>R$ 39,90 <span>/mês</span></h2>
+                </li>
+                <div class="buttonContainer">
+                  <a href="plans.html">Saiba Mais</a>
                 </div>
+              </ul>
             </div>
-        </section>
-
-        <!-- serie -->
-        <section id="serie">
-            <div class="serieContainer">
-                <ul>
-                    <li data-aos="fade-right" data-aos-duration="1500">
-                        <h1>Maratonas Garantidas</h1>
-                        <p>
-                            De dramas emocionantes a comédias inesquecíveis, encontre séries que vão te prender do
-                            primeiro ao último episódio, prontas para serem maratonadas
-                        </p>
-                    </li>
-                </ul>
-                <div class="serieCard" data-aos="fade-up" data-aos-duration="3000">
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/serie-acao.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Ação<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/serie-comedia.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Comédia<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/serie-ficcao.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Ficcção Científica<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/serie-romance.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Romance<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul class="cardContainer">
-                        <a href="#">
-                        <li>
-                            <div class="imageWrapper">
-                                <img src="./img/serie-terror.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Terror<i class="arrow-animations"></i></h2>
-                        </li>
-                        </a>
-                    </ul>
+            <div data-aos="flip-left" data-aos-duration="2000">
+              <ul class="cardSubscribeContainer">
+                <li>
+                  <h1>Plano Ultimate</h1>
+                </li>
+                <li class="check-text">
+                  <i class="bx bx-check"></i>
+                  <h3>Acesso a lançamentos e conteúdos antecipados</h3>
+                </li>
+                <li class="check-text">
+                  <i class="bx bx-check"></i>
+                  <h3>Qualidade de streaming em 4K e Dolby Atmos</h3>
+                </li>
+                <li>
+                  <h2>R$ 59,90 <span>/mês</span></h2>
+                </li>
+                <div class="buttonContainer">
+                  <a href="plans.html">Saiba Mais</a>
                 </div>
+              </ul>
             </div>
-        </section>
+          </div>
+          <div class="subContainer" data-aos="fade-up" data-aos-duration="1500">
+            <li>
+              <h1>Comece sua <span>experiência</span> gratuita hoje!</h1>
+              <p>
+                Descubra uma incrível seleção de filmes e séries, com
+                experiências personalizadas para você. Assista a qualquer hora,
+                em qualquer lugar!
+              </p>
+            </li>
+            <li>
+              <a href="plans.html">Mais sobre a StreamPlay</a>
+            </li>
+          </div>
+        </div>
+      </section>
 
-        <!-- platform -->
-        <section id="platform">
-            <div class="platformContainer">
-                <ul>
-                    <li data-aos="fade-right" data-aos-duration="1500">
-                        <h1>Assista Onde e Quando Quiser</h1>
-                        <p>
-                            Seja no conforto do sofá ou em qualquer lugar do mundo, nosso serviço é compatível com
-                            celulares, smart TVs, tablets, consoles e muito mais.
-                        </p>
-                    </li>
-                </ul>
-                <div class="platformCardTop" data-aos="zoom-in" data-aos-duration="1500">
-                    <ul class="cardPlatformContainer">
-                        <li class="icon-title">
-                            <i class='bx bx-mobile-alt'></i>
-                            <h2>Celular</h2>
-                        </li>
-                        <li>
-                            <p>
-                                Assista aos seus filmes e séries onde quer que esteja com a melhor qualidade de imagem e
-                                som. Com o StreamPlay no seu celular, você tem entretenimento a qualquer hora
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="cardPlatformContainer">
-                        <li class="icon-title">
-                            <i class='bx bx-desktop'></i>
-                            <h2>Computador</h2>
-                        </li>
-                        <li>
-                            <p>
-                                No seu computador, o StreamPlay oferece uma experiência de streaming prática e rápida,
-                                com acesso ao nosso catálogo de filmes e séries, tudo na alta qualidade
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="cardPlatformContainer">
-                        <li class="icon-title">
-                            <i class='bx bx-joystick'></i>
-                            <h2>Console de Jogos</h2>
-                        </li>
-                        <li>
-                            <p>
-                                Transforme seu console de jogos em uma central de entretenimento. Acesse filmes e séries
-                                com qualidade, direto na tela da sua TV, de forma simples e rápida
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="platformCardBottom" data-aos="zoom-in" data-aos-duration="1500">
-                    <ul class="cardPlatformContainer">
-                        <li class="icon-title">
-                            <i class='bx bx-laptop'></i>
-                            <h2>Notebook</h2>
-                        </li>
-                        <li>
-                            <p>
-                                Com o StreamPlay no seu notebook, você tem a liberdade de assistir a conteúdos em
-                                qualquer lugar, com uma tela maior e qualidade de imagem e som excepcionais
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="cardPlatformContainer">
-                        <li class="icon-title">
-                            <i class='bx bx-tv'></i>
-                            <h2>Smart TV</h2>
-                        </li>
-                        <li>
-                            <p>
-                                O StreamPlay na sua Smart TV oferece uma experiência de alta qualidade e navegação fácil,
-                                para você assistir aos seus conteúdos favoritos com conforto
-                            </p>
-                        </li>
-                    </ul>
-                    <ul class="cardPlatformContainer">
-                        <li class="icon-title">
-                            <i class='bx bx-tab'></i>
-                            <h2>Tablet</h2>
-                        </li>
-                        <li>
-                            <p>
-                                No tablet, o StreamPlay combina mobilidade e conforto, oferecendo uma ótima experiência
-                                de streaming com qualidade, seja em casa ou em qualquer lugar
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+      <!-- footer -->
+      <footer>
+        <div class="footerContainer">
+          <div class="footerTop">
+            <div class="footerInner">
+              <h3>Início</h3>
+              <ul>
+                <li><a href="#movie">Categorias</a></li>
+                <li><a href="#platform">Dispositivos</a></li>
+                <li><a href="#subscribe">Preços</a></li>
+                <li><a href="#testFree">Teste Grátis</a></li>
+              </ul>
             </div>
-        </section>
-
-        <!-- subscribe -->
-        <section id="subscribe">
-            <div class="subscribeContainer">
-                <ul>
-                    <li data-aos="fade-right" data-aos-duration="1500">
-                        <h1>Experimente o Melhor do Entretenimento</h1>
-                        <p id="testFree">
-                            Não perca mais tempo! Escolha o plano ideal para você e tenha acesso imediato
-                            ao catálogo
-                            completo de filmes e séries de alta qualidade
-                        </p>
-                    </li>
-                </ul>
-                <div class="subscribeCard">
-                    <div data-aos="flip-left" data-aos-duration="1500">
-                        <ul class="cardSubscribeContainer">
-                            <li>
-                                <h1>Plano Básico</h1>
-                            </li>
-                            <li class="check-text">
-                                <i class='bx bx-check'></i>
-                                <h3>Qualidade de streaming em HD</h3>
-                            </li>
-                            <li class="check-text">
-                                <i class='bx bx-check'></i>
-                                <h3>Transmissão em 1 dispositivo simultâneo</h3>
-                            </li>
-                            <li>
-                                <h2>R$ 19,90 <span>/mês</span></h2>
-                            </li>
-                            <div class="buttonContainer">
-                                <a href="plans.html">Saiba Mais</a>
-                            </div>
-                        </ul>
-                    </div>
-                    <div data-aos="flip-left" data-aos-duration="1500">
-                        <ul class="cardSubscribeContainer">
-                            <li>
-                                <h1>Plano Premium</h1>
-                            </li>
-                            <li class="check-text">
-                                <i class='bx bx-check'></i>
-                                <h3>Acesso a todo o catálogo de filmes e séries</h3>
-                            </li>
-                            <li class="check-text">
-                                <i class='bx bx-check'></i>
-                                <h3>Qualidade de streaming em Full HD</h3>
-                            </li>
-                            <li>
-                                <h2>R$ 39,90 <span>/mês</span></h2>
-                            </li>
-                            <div class="buttonContainer">
-                                <a href="plans.html">Saiba Mais</a>
-                            </div>
-                        </ul>
-                    </div>
-                    <div data-aos="flip-left" data-aos-duration="2000">
-                        <ul class="cardSubscribeContainer">
-                            <li>
-                                <h1>Plano Ultimate</h1>
-                            </li>
-                            <li class="check-text">
-                                <i class='bx bx-check'></i>
-                                <h3>Acesso a lançamentos e conteúdos antecipados</h3>
-                            </li>
-                            <li class="check-text">
-                                <i class='bx bx-check'></i>
-                                <h3>Qualidade de streaming em 4K e Dolby Atmos</h3>
-                            </li>
-                            <li>
-                                <h2>R$ 59,90 <span>/mês</span></h2>
-                            </li>
-                            <div class="buttonContainer">
-                                <a href="plans.html">Saiba Mais</a>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <div class="subContainer" data-aos="fade-up" data-aos-duration="1500">
-                    <li>
-                        <h1>Comece sua <span>experiência</span> gratuita hoje!</h1>
-                        <p>
-                            Descubra uma incrível seleção de filmes e séries, com experiências personalizadas para você.
-                            Assista a qualquer hora, em qualquer lugar!
-                        </p>
-                    </li>
-                    <li>
-                        <a href="plans.html">Mais sobre a StreamPlay</a>
-                    </li>
-                </div>
+            <div class="footerInner">
+              <h3>Filmes</h3>
+              <ul>
+                <li><a href="#movie">Gêneros</a></li>
+                <li><a href="#movie">Em Alta</a></li>
+                <li><a href="#movie">Lançamentos</a></li>
+                <li><a href="#movie">Populares</a></li>
+              </ul>
             </div>
-        </section>
-
-        <!-- footer -->
-        <footer>
-            <div class="footerContainer">
-                <div class="footerTop">
-                    <div class="footerInner">
-                        <h3>Início</h3>
-                        <ul>
-                            <li><a href="#movie">Categorias</a></li>
-                            <li><a href="#platform">Dispositivos</a></li>
-                            <li><a href="#subscribe">Preços</a></li>
-                            <li><a href="#testFree">Teste Grátis</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerInner">
-                        <h3>Filmes</h3>
-                        <ul>
-                            <li><a href="#movie">Gêneros</a></li>
-                            <li><a href="#movie">Em Alta</a></li>
-                            <li><a href="#movie">Lançamentos</a></li>
-                            <li><a href="#movie">Populares</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerInner">
-                        <h3>Séries</h3>
-                        <ul>
-                            <li><a href="#serie">Gêneros</a></li>
-                            <li><a href="#serie">Em Alta</a></li>
-                            <li><a href="#serie">Lançamentos</a></li>
-                            <li><a href="#serie">Populares</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerInner">
-                        <h3>Plataformas</h3>
-                        <ul>
-                            <li><a href="#platform">Compatibilidade</a></li>
-                            <li><a href="#platform">Acessibilidade</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerInner">
-                        <h3>Assine Agora</h3>
-                        <ul>
-                            <li><a href="#subscribe">Planos</a></li>
-                            <li><a href="#subscribe">Assinatura</a></li>
-                        </ul>
-                    </div>
-                    <div class="footerInner">
-                        <h3>Redes Sociais</h3>
-                        <ul class="iconContact">
-                            <li><a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a></li>
-                            <li><a href="https://www.tiktok.com/pt-BR"><i class='bx bxl-tiktok'></i></a></li>
-                            <li><a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footerBottom">
-                    <h2>© 2024 StreamPlay. Todos os Direitos Reservados.</h2>
-                </div>
+            <div class="footerInner">
+              <h3>Séries</h3>
+              <ul>
+                <li><a href="#serie">Gêneros</a></li>
+                <li><a href="#serie">Em Alta</a></li>
+                <li><a href="#serie">Lançamentos</a></li>
+                <li><a href="#serie">Populares</a></li>
+              </ul>
             </div>
-
-        </footer>
-
+            <div class="footerInner">
+              <h3>Plataformas</h3>
+              <ul>
+                <li><a href="#platform">Compatibilidade</a></li>
+                <li><a href="#platform">Acessibilidade</a></li>
+              </ul>
+            </div>
+            <div class="footerInner">
+              <h3>Assine Agora</h3>
+              <ul>
+                <li><a href="#subscribe">Planos</a></li>
+                <li><a href="#subscribe">Assinatura</a></li>
+              </ul>
+            </div>
+            <div class="footerInner">
+              <h3>Redes Sociais</h3>
+              <ul class="iconContact">
+                <li>
+                  <a href="https://www.instagram.com"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/pt-BR"
+                    ><i class="bx bxl-tiktok"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com"
+                    ><i class="bx bxl-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footerBottom">
+            <h2>© 2024 StreamPlay. Todos os Direitos Reservados.</h2>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="./js/script.js"></script>
@@ -485,9 +515,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-
-</body>
-
+  </body>
 </html>

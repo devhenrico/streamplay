@@ -1,388 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- favIcon -->
-    <link rel="shortcut icon" href="./img/logo-pequeno.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./img/logo-pequeno.png"
+      type="image/x-icon"
+    />
     <!-- boxIcons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontAwesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Assinar | StreamPlay</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- header -->
     <header>
+      <button id="btnTop"><i class="fa-solid fa-caret-up"></i></button>
 
-        <button id="btnTop"><i class='bx bx-chevron-up'></i></button>
-
-        <nav>
-            <div class="menu">
-                    <a href="index.html#home">
-                        <img src="./img/logo.png" alt="streamplay">
-                    </a>
-                <ul class="navBar">
-                    <li><a href="index.html#home">Início</a></li>
-                    <li><a href="index.html#movie">Filmes</a></li>
-                    <li><a href="index.html#serie">Séries</a></li>
-                    <li><a href="index.html#platform">Plataformas</a></li>
-                    <li><a href="#">Assine Agora</a></li>
-                </ul>
-                <ul class="icons">
-                    <li>
-                        <button><i class='bx bx-search'></i></button>
-                        <button><i class='bx bx-bell'></i></button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="menu">
+          <a href="index.html#home">
+            <img src="./img/logo.png" alt="streamplay" />
+          </a>
+          <ul class="navBar">
+            <li><a href="index.html#home">Início</a></li>
+            <li><a href="index.html#movie">Filmes</a></li>
+            <li><a href="index.html#serie">Séries</a></li>
+            <li><a href="index.html#platform">Plataformas</a></li>
+            <li><a href="#">Assine Agora</a></li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <button><i class="bx bx-search"></i></button>
+              <button><i class="bx bx-bell"></i></button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-
-        <!-- plans -->
-        <section id="plans">
-            <div class="plansContainer">
-                <div class="reasonsCard">
-                    <ul class="cardReasons">
-                        <li>
-                            <h2>Catálogo Extenso e Exclusivo</h2>
-                        </li>
-                        <li>
-                            <p>Acesse uma vasta coleção de filmes e séries, incluindo lançamentos, clássicos e produções
-                                exclusivas.</p>
-                        </li>
-                        <li>
-                            <i class="bx bx-film"></i>
-                        </li>
-                    </ul>
-                    <ul class="cardReasons">
-                        <li>
-                            <h2>Experiência Personalizada</h2>
-                        </li>
-                        <li>
-                            <p>Receba recomendações personalizadas e mantenha o ritmo da sua maratona sem interrupções.
-                            </p>
-                        </li>
-                        <li>
-                            <i class="bx bx-user-circle"></i>
-                        </li>
-                    </ul>
-                    <ul class="cardReasons">
-                        <li>
-                            <h2>Qualidade e Acessibilidade</h2>
-                        </li>
-                        <li>
-                            <p>Desfrute de conteúdo em alta definição, com legendas e dublagens, em qualquer
-                                dispositivo.</p>
-                        </li>
-                        <li>
-                            <i class="bx bx-tv"></i>
-                        </li>
-                    </ul>
-                    <ul class="cardReasons">
-                        <li>
-                            <h2>Planos Flexíveis e Sem Compromisso</h2>
-                        </li>
-                        <li>
-                            <p>Escolha entre planos acessíveis com cancelamento a qualquer momento, sem complicações.
-                            </p>
-                        </li>
-                        <li>
-                            <i class="bx bx-wallet"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="plansCardContainer">
-                    <div class="textContainer">
-                        <ul>
-                            <li>
-                                <h1>Escolha o <span>Plano</span> Ideal para Você</h1>
-                                <p>Encontre o Plano Perfeito para Aproveitar ao Máximo Seus Filmes e Séries Favoritos!
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="plansCard">
-                        <div>
-                            <ul class="cardPlansContainer">
-                                <li>
-                                    <img src="./img/logo.png" alt="">
-                                </li>
-                                <li>
-                                    <h1>Básico</h1>
-                                </li>
-                                <li>
-                                    <h2>R$ 0 por 3 meses</h2>
-                                </li>
-                                <li>
-                                    <h3>Depois é só R$ 19,90/mês</h3>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Qualidade em HD</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>1 dispositivo simultâneo</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Catálogo limitado</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Sem propagandas</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Atualizações mensais</p>
-                                </li>
-                                <div class="buttonContainer">
-                                    <a href="plans.html">Escolha Seu Plano</a>
-                                </div>
-                                <li>
-                                    <p>Grátis por 3 meses, depois R$ 19,90 por mês. Oferta disponível apenas para quem
-                                        nunca teve o Plano Básico. Sujeita a Termos.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="cardPlansContainer">
-                                <li>
-                                    <img src="./img/logo.png" alt="">
-                                </li>
-                                <li>
-                                    <h1>Premium</h1>
-                                </li>
-                                <li>
-                                    <h2>R$ 0 por 2 meses</h2>
-                                </li>
-                                <li>
-                                    <h3>Depois é só R$ 39,90/mês</h3>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Qualidade em Full HD</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>2 dispositivos simultâneos</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Catálogo completo</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Downloads offline</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Perfis personalizados</p>
-                                </li>
-                                <div class="buttonContainer">
-                                    <a href="plans.html">Escolha Seu Plano</a>
-                                </div>
-                                <li>
-                                    <p>Grátis por 2 meses, depois R$ 39,90 por mês. Oferta disponível apenas para quem
-                                        nunca teve o Plano Premium. Sujeita a Termos.</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="cardPlansContainer">
-                                <li>
-                                    <img src="./img/logo.png" alt="logo">
-                                </li>
-                                <li>
-                                    <h1>Ultimate</h1>
-                                </li>
-                                <li>
-                                    <h2>R$ 0 por 1 mês</h2>
-                                </li>
-                                <li>
-                                    <h3>Depois é só R$ 59,90/mês</h3>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Qualidade em 4K</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>4 dispositivos simultâneos</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Conteúdos exclusivos</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Lançamentos antecipados</p>
-                                </li>
-                                <li class="check-text">
-                                    <i class='bx bx-check'></i>
-                                    <p>Suporte prioritário</p>
-                                </li>
-                                <div class="buttonContainer">
-                                    <a href="plans.html">Escolha Seu Plano</a>
-                                </div>
-                                <li>
-                                    <p>Grátis por 1 mês, depois R$ 59,90 por mês. Oferta disponível apenas para quem
-                                        nunca teve o Plano Ultimate. Sujeita a Termos.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="faqContainer">
-                    <ul>
-                        <li>
-                            <h1><span>Perguntas</span> Frequentes</h1>
-                            <p>Encontre respostas para todas as suas dúvidas sobre o StreamPlay e aproveite ao máximo a
-                                sua experiência!</p>
-                        </li>
-                    </ul>
-                    <div class="faqCard">
-                        <button class="faqQuestion">
-                            <h2>O que é a StreamPlay?</h2><i class="bx bx-plus toggle-icon"></i>
-                        </button>
-                        <div class="faqResponse">
-                            <p>A StreamPlay é uma plataforma de streaming que oferece uma ampla variedade de filmes e
-                                séries para você assistir quando e onde quiser. Com uma interface amigável e conteúdo
-                                atualizado regularmente, a StreamPlay é a melhor escolha para entretenimento digital.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faqCard">
-                        <button class="faqQuestion">
-                            <h2>Quais planos estão disponíveis na StreamPlay?</h2><i class="bx bx-plus toggle-icon"></i>
-                        </button>
-                        <div class="faqResponse">
-                            <p>A StreamPlay oferece três planos: Básico: Ideal para usuários que desejam assistir em um
-                                único dispositivo com qualidade padrão (HD). Premium: Permite assistir em até dois
-                                dispositivos simultaneamente em alta definição (Full HD). Ultimate: Oferece suporte para
-                                até
-                                quatro dispositivos simultaneamente em qualidade Ultra HD (4K).</p>
-                        </div>
-                    </div>
-                    <div class="faqCard">
-                        <button class="faqQuestion">
-                            <h2>Posso experimentar a StreamPlay antes de assinar?</h2><i
-                                class="bx bx-plus toggle-icon"></i>
-                        </button>
-                        <div class="faqResponse">
-                            <p>Sim! Oferecemos um período de teste gratuito de 7 dias para novos usuários. Durante esse
-                                período, você terá acesso completo ao catálogo e poderá explorar todos os recursos antes
-                                de decidir por uma assinatura.</p>
-                        </div>
-                    </div>
-                    <div class="faqCard">
-                        <button class="faqQuestion">
-                            <h2>Em quais dispositivos posso assistir a StreamPlay?</h2><i
-                                class="bx bx-plus toggle-icon"></i>
-                        </button>
-                        <div class="faqResponse">
-                            <p>Você pode assistir a StreamPlay em diversos dispositivos, incluindo: Smart TVs;
-                                Computadores e notebook (via navegador); Celulares e tablets (iOS e Android); Consoles
-                                de
-                                videogame (PlayStation e Xbox); Dispositivos de streaming como Chromecast.</p>
-                        </div>
-                    </div>
-                    <div class="faqCard">
-                        <button class="faqQuestion">
-                            <h2>Posso compartilhar minha conta com outras pessoas?</h2><i
-                                class="bx bx-plus toggle-icon"></i>
-                        </button>
-                        <div class="faqResponse">
-                            <p>Depende do plano contratado: Básico: Apenas um dispositivo por vez. Premium: Permite até
-                                dois dispositivos simultaneamente. Ultimate: Permite até quatro dispositivos
-                                simultaneamente. Recomendamos que você compartilhe apenas com pessoas de confiança.</p>
-                        </div>
-                    </div>
-                    <div class="faqCard">
-                        <button class="faqQuestion">
-                            <h2>A StreamPlay tem conteúdo exclusivo?</h2><i class="bx bx-plus toggle-icon"></i>
-                        </button>
-                        <div class="faqResponse">
-                            <p>Sim! A StreamPlay possui filmes e séries originais exclusivos, além de um catálogo
-                                diversificado de grandes estúdios. Nosso conteúdo exclusivo é atualizado regularmente
-                                para garantir que você sempre tenha algo novo para assistir.</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- plans -->
+      <section id="plans">
+        <div class="plansContainer">
+          <div class="reasonsCard">
+            <ul class="cardReasons">
+              <li>
+                <h2>Catálogo Extenso e Exclusivo</h2>
+              </li>
+              <li>
+                <p>
+                  Acesse uma vasta coleção de filmes e séries, incluindo
+                  lançamentos, clássicos e produções exclusivas.
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-film"></i>
+              </li>
+            </ul>
+            <ul class="cardReasons">
+              <li>
+                <h2>Experiência Personalizada</h2>
+              </li>
+              <li>
+                <p>
+                  Receba recomendações personalizadas e mantenha o ritmo da sua
+                  maratona sem interrupções.
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-user-circle"></i>
+              </li>
+            </ul>
+            <ul class="cardReasons">
+              <li>
+                <h2>Qualidade e Acessibilidade</h2>
+              </li>
+              <li>
+                <p>
+                  Desfrute de conteúdo em alta definição, com legendas e
+                  dublagens, em qualquer dispositivo.
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-tv"></i>
+              </li>
+            </ul>
+            <ul class="cardReasons">
+              <li>
+                <h2>Planos Flexíveis e Sem Compromisso</h2>
+              </li>
+              <li>
+                <p>
+                  Escolha entre planos acessíveis com cancelamento a qualquer
+                  momento, sem complicações.
+                </p>
+              </li>
+              <li>
+                <i class="bx bx-wallet"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="plansCardContainer">
+            <div class="textContainer">
+              <ul>
+                <li>
+                  <h1>Escolha o <span>Plano</span> Ideal para Você</h1>
+                  <p>
+                    Encontre o Plano Perfeito para Aproveitar ao Máximo Seus
+                    Filmes e Séries Favoritos!
+                  </p>
+                </li>
+              </ul>
             </div>
-        </section>
-
+            <div class="plansCard">
+              <div>
+                <ul class="cardPlansContainer">
+                  <li>
+                    <img src="./img/logo.png" alt="" />
+                  </li>
+                  <li>
+                    <h1>Básico</h1>
+                  </li>
+                  <li>
+                    <h2>R$ 0 por 3 meses</h2>
+                  </li>
+                  <li>
+                    <h3>Depois é só R$ 19,90/mês</h3>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Qualidade em HD</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>1 dispositivo simultâneo</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Catálogo limitado</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Sem propagandas</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Atualizações mensais</p>
+                  </li>
+                  <div class="buttonContainer">
+                    <a href="plans.html">Escolha Seu Plano</a>
+                  </div>
+                  <li>
+                    <p>
+                      Grátis por 3 meses, depois R$ 19,90 por mês. Oferta
+                      disponível apenas para quem nunca teve o Plano Básico.
+                      Sujeita a Termos.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="cardPlansContainer">
+                  <li>
+                    <img src="./img/logo.png" alt="" />
+                  </li>
+                  <li>
+                    <h1>Premium</h1>
+                  </li>
+                  <li>
+                    <h2>R$ 0 por 2 meses</h2>
+                  </li>
+                  <li>
+                    <h3>Depois é só R$ 39,90/mês</h3>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Qualidade em Full HD</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>2 dispositivos simultâneos</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Catálogo completo</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Downloads offline</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Perfis personalizados</p>
+                  </li>
+                  <div class="buttonContainer">
+                    <a href="plans.html">Escolha Seu Plano</a>
+                  </div>
+                  <li>
+                    <p>
+                      Grátis por 2 meses, depois R$ 39,90 por mês. Oferta
+                      disponível apenas para quem nunca teve o Plano Premium.
+                      Sujeita a Termos.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="cardPlansContainer">
+                  <li>
+                    <img src="./img/logo.png" alt="logo" />
+                  </li>
+                  <li>
+                    <h1>Ultimate</h1>
+                  </li>
+                  <li>
+                    <h2>R$ 0 por 1 mês</h2>
+                  </li>
+                  <li>
+                    <h3>Depois é só R$ 59,90/mês</h3>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Qualidade em 4K</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>4 dispositivos simultâneos</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Conteúdos exclusivos</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Lançamentos antecipados</p>
+                  </li>
+                  <li class="check-text">
+                    <i class="bx bx-check"></i>
+                    <p>Suporte prioritário</p>
+                  </li>
+                  <div class="buttonContainer">
+                    <a href="plans.html">Escolha Seu Plano</a>
+                  </div>
+                  <li>
+                    <p>
+                      Grátis por 1 mês, depois R$ 59,90 por mês. Oferta
+                      disponível apenas para quem nunca teve o Plano Ultimate.
+                      Sujeita a Termos.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="faqContainer">
+            <ul>
+              <li>
+                <h1><span>Perguntas</span> Frequentes</h1>
+                <p>
+                  Encontre respostas para todas as suas dúvidas sobre o
+                  StreamPlay e aproveite ao máximo a sua experiência!
+                </p>
+              </li>
+            </ul>
+            <div class="faqCard">
+              <button class="faqQuestion">
+                <h2>O que é a StreamPlay?</h2>
+                <i class="bx bx-plus toggle-icon"></i>
+              </button>
+              <div class="faqResponse">
+                <p>
+                  A StreamPlay é uma plataforma de streaming que oferece uma
+                  ampla variedade de filmes e séries para você assistir quando e
+                  onde quiser. Com uma interface amigável e conteúdo atualizado
+                  regularmente, a StreamPlay é a melhor escolha para
+                  entretenimento digital.
+                </p>
+              </div>
+            </div>
+            <div class="faqCard">
+              <button class="faqQuestion">
+                <h2>Quais planos estão disponíveis na StreamPlay?</h2>
+                <i class="bx bx-plus toggle-icon"></i>
+              </button>
+              <div class="faqResponse">
+                <p>
+                  A StreamPlay oferece três planos: Básico: Ideal para usuários
+                  que desejam assistir em um único dispositivo com qualidade
+                  padrão (HD). Premium: Permite assistir em até dois
+                  dispositivos simultaneamente em alta definição (Full HD).
+                  Ultimate: Oferece suporte para até quatro dispositivos
+                  simultaneamente em qualidade Ultra HD (4K).
+                </p>
+              </div>
+            </div>
+            <div class="faqCard">
+              <button class="faqQuestion">
+                <h2>Posso experimentar a StreamPlay antes de assinar?</h2>
+                <i class="bx bx-plus toggle-icon"></i>
+              </button>
+              <div class="faqResponse">
+                <p>
+                  Sim! Oferecemos um período de teste gratuito de 7 dias para
+                  novos usuários. Durante esse período, você terá acesso
+                  completo ao catálogo e poderá explorar todos os recursos antes
+                  de decidir por uma assinatura.
+                </p>
+              </div>
+            </div>
+            <div class="faqCard">
+              <button class="faqQuestion">
+                <h2>Em quais dispositivos posso assistir a StreamPlay?</h2>
+                <i class="bx bx-plus toggle-icon"></i>
+              </button>
+              <div class="faqResponse">
+                <p>
+                  Você pode assistir a StreamPlay em diversos dispositivos,
+                  incluindo: Smart TVs; Computadores e notebook (via navegador);
+                  Celulares e tablets (iOS e Android); Consoles de videogame
+                  (PlayStation e Xbox); Dispositivos de streaming como
+                  Chromecast.
+                </p>
+              </div>
+            </div>
+            <div class="faqCard">
+              <button class="faqQuestion">
+                <h2>Posso compartilhar minha conta com outras pessoas?</h2>
+                <i class="bx bx-plus toggle-icon"></i>
+              </button>
+              <div class="faqResponse">
+                <p>
+                  Depende do plano contratado: Básico: Apenas um dispositivo por
+                  vez. Premium: Permite até dois dispositivos simultaneamente.
+                  Ultimate: Permite até quatro dispositivos simultaneamente.
+                  Recomendamos que você compartilhe apenas com pessoas de
+                  confiança.
+                </p>
+              </div>
+            </div>
+            <div class="faqCard">
+              <button class="faqQuestion">
+                <h2>A StreamPlay tem conteúdo exclusivo?</h2>
+                <i class="bx bx-plus toggle-icon"></i>
+              </button>
+              <div class="faqResponse">
+                <p>
+                  Sim! A StreamPlay possui filmes e séries originais exclusivos,
+                  além de um catálogo diversificado de grandes estúdios. Nosso
+                  conteúdo exclusivo é atualizado regularmente para garantir que
+                  você sempre tenha algo novo para assistir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
     <footer>
-        <div class="footerContainer">
-            <div class="footerTop">
-                <div class="footerInner">
-                    <h3>Início</h3>
-                    <ul>
-                        <li><a href="index.html#movie">Categorias</a></li>
-                        <li><a href="index.html#platform">Dispositivos</a></li>
-                        <li><a href="index.html#subscribe">Preços</a></li>
-                        <li><a href="index.html#testFree">Teste Grátis</a></li>
-                    </ul>
-                </div>
-                <div class="footerInner">
-                    <h3>Filmes</h3>
-                    <ul>
-                        <li><a href="index.html#movie">Gêneros</a></li>
-                        <li><a href="index.html#movie">Em Alta</a></li>
-                        <li><a href="index.html#movie">Lançamentos</a></li>
-                        <li><a href="index.html#movie">Populares</a></li>
-                    </ul>
-                </div>
-                <div class="footerInner">
-                    <h3>Séries</h3>
-                    <ul>
-                        <li><a href="index.html#serie">Gêneros</a></li>
-                        <li><a href="index.html#serie">Em Alta</a></li>
-                        <li><a href="index.html#serie">Lançamentos</a></li>
-                        <li><a href="index.html#serie">Populares</a></li>
-                    </ul>
-                </div>
-                <div class="footerInner">
-                    <h3>Plataformas</h3>
-                    <ul>
-                        <li><a href="index.html#platform">Compatibilidade</a></li>
-                        <li><a href="index.html#platform">Acessibilidade</a></li>
-                    </ul>
-                </div>
-                <div class="footerInner">
-                    <h3>Assine Agora</h3>
-                    <ul>
-                        <li><a href="index.html#subscribe">Planos</a></li>
-                        <li><a href="index.html#subscribe">Assinatura</a></li>
-                    </ul>
-                </div>
-                <div class="footerInner">
-                    <h3>Redes Sociais</h3>
-                    <ul class="iconContact">
-                        <li><a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a></li>
-                        <li><a href="https://www.tiktok.com/pt-BR"><i class='bx bxl-tiktok'></i></i></a></li>
-                        <li><a href="https://www.youtube.com"><i class='bx bxl-youtube'></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footerBottom">
-                <h2>© 2024 StreamPlay. Todos os Direitos Reservados.</h2>
-            </div>
+      <div class="footerContainer">
+        <div class="footerTop">
+          <div class="footerInner">
+            <h3>Início</h3>
+            <ul>
+              <li><a href="index.html#movie">Categorias</a></li>
+              <li><a href="index.html#platform">Dispositivos</a></li>
+              <li><a href="index.html#subscribe">Preços</a></li>
+              <li><a href="index.html#testFree">Teste Grátis</a></li>
+            </ul>
+          </div>
+          <div class="footerInner">
+            <h3>Filmes</h3>
+            <ul>
+              <li><a href="index.html#movie">Gêneros</a></li>
+              <li><a href="index.html#movie">Em Alta</a></li>
+              <li><a href="index.html#movie">Lançamentos</a></li>
+              <li><a href="index.html#movie">Populares</a></li>
+            </ul>
+          </div>
+          <div class="footerInner">
+            <h3>Séries</h3>
+            <ul>
+              <li><a href="index.html#serie">Gêneros</a></li>
+              <li><a href="index.html#serie">Em Alta</a></li>
+              <li><a href="index.html#serie">Lançamentos</a></li>
+              <li><a href="index.html#serie">Populares</a></li>
+            </ul>
+          </div>
+          <div class="footerInner">
+            <h3>Plataformas</h3>
+            <ul>
+              <li><a href="index.html#platform">Compatibilidade</a></li>
+              <li><a href="index.html#platform">Acessibilidade</a></li>
+            </ul>
+          </div>
+          <div class="footerInner">
+            <h3>Assine Agora</h3>
+            <ul>
+              <li><a href="index.html#subscribe">Planos</a></li>
+              <li><a href="index.html#subscribe">Assinatura</a></li>
+            </ul>
+          </div>
+          <div class="footerInner">
+            <h3>Redes Sociais</h3>
+            <ul class="iconContact">
+              <li>
+                <a href="https://www.instagram.com"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/pt-BR"
+                  ><i class="bx bxl-tiktok"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com"
+                  ><i class="bx bxl-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-
+        <div class="footerBottom">
+          <h2>© 2024 StreamPlay. Todos os Direitos Reservados.</h2>
+        </div>
+      </div>
     </footer>
 
     <script src="./js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
