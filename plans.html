@@ -21,6 +21,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Assinar | StreamPlay</title>
   </head>
 
@@ -29,7 +31,7 @@
     <header>
       <button id="btnTop"><i class="fa-solid fa-caret-up"></i></button>
 
-      <nav>
+      <nav data-aos="fade-down" data-aos-duration="1500">
         <div class="menu">
           <a href="index.html#home">
             <img src="./img/logo.png" alt="streamplay" />
@@ -55,7 +57,7 @@
       <!-- plans -->
       <section id="plans">
         <div class="plansContainer">
-          <div class="reasonsCard">
+          <div class="reasonsCard" data-aos="zoom-in" data-aos-duration="2000">
             <ul class="cardReasons">
               <li>
                 <h2>Catálogo Extenso e Exclusivo</h2>
@@ -114,256 +116,150 @@
             </ul>
           </div>
           <div class="plansCardContainer">
-            <div class="textContainer">
-              <ul>
+            <div
+              class="textContainer"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              <h1>Escolha o <span>Plano</span> Ideal para Você</h1>
+              <p>
+                Encontre o Plano Perfeito para Aproveitar ao Máximo Seus Filmes
+                e Séries Favoritos!
+              </p>
+            </div>
+            <div class="plansCard" data-aos="fade-up" data-aos-duration="2000">
+              <ul class="cardPlansContainer">
                 <li>
-                  <h1>Escolha o <span>Plano</span> Ideal para Você</h1>
+                  <img src="./img/logo.png" alt="" />
+                </li>
+                <li>
+                  <h1>Básico</h1>
+                </li>
+                <li>
+                  <h2>R$ 0 por 3 meses</h2>
+                </li>
+                <li>
+                  <h3>Depois é só R$ 19,90/mês</h3>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Qualidade em HD</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>1 dispositivo simultâneo</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Catálogo limitado</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Sem propagandas</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Atualizações mensais</p>
+                </li>
+                <div class="buttonContainer">
+                  <a href="plans.html">Escolha Seu Plano</a>
+                </div>
+                <li>
                   <p>
-                    Encontre o Plano Perfeito para Aproveitar ao Máximo Seus
-                    Filmes e Séries Favoritos!
+                    Grátis por 3 meses, depois R$ 19,90 por mês. Oferta
+                    disponível apenas para quem nunca teve o Plano Básico.
+                    Sujeita a Termos.
                   </p>
                 </li>
               </ul>
-            </div>
-            <div class="plansCard">
-              <div>
-                <ul class="cardPlansContainer">
-                  <li>
-                    <img src="./img/logo.png" alt="" />
-                  </li>
-                  <li>
-                    <h1>Básico</h1>
-                  </li>
-                  <li>
-                    <h2>R$ 0 por 3 meses</h2>
-                  </li>
-                  <li>
-                    <h3>Depois é só R$ 19,90/mês</h3>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Qualidade em HD</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>1 dispositivo simultâneo</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Catálogo limitado</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Sem propagandas</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Atualizações mensais</p>
-                  </li>
-                  <div class="buttonContainer">
-                    <a href="plans.html">Escolha Seu Plano</a>
-                  </div>
-                  <li>
-                    <p>
-                      Grátis por 3 meses, depois R$ 19,90 por mês. Oferta
-                      disponível apenas para quem nunca teve o Plano Básico.
-                      Sujeita a Termos.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul class="cardPlansContainer">
-                  <li>
-                    <img src="./img/logo.png" alt="" />
-                  </li>
-                  <li>
-                    <h1>Premium</h1>
-                  </li>
-                  <li>
-                    <h2>R$ 0 por 2 meses</h2>
-                  </li>
-                  <li>
-                    <h3>Depois é só R$ 39,90/mês</h3>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Qualidade em Full HD</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>2 dispositivos simultâneos</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Catálogo completo</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Downloads offline</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Perfis personalizados</p>
-                  </li>
-                  <div class="buttonContainer">
-                    <a href="plans.html">Escolha Seu Plano</a>
-                  </div>
-                  <li>
-                    <p>
-                      Grátis por 2 meses, depois R$ 39,90 por mês. Oferta
-                      disponível apenas para quem nunca teve o Plano Premium.
-                      Sujeita a Termos.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul class="cardPlansContainer">
-                  <li>
-                    <img src="./img/logo.png" alt="logo" />
-                  </li>
-                  <li>
-                    <h1>Ultimate</h1>
-                  </li>
-                  <li>
-                    <h2>R$ 0 por 1 mês</h2>
-                  </li>
-                  <li>
-                    <h3>Depois é só R$ 59,90/mês</h3>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Qualidade em 4K</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>4 dispositivos simultâneos</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Conteúdos exclusivos</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Lançamentos antecipados</p>
-                  </li>
-                  <li class="check-text">
-                    <i class="bx bx-check"></i>
-                    <p>Suporte prioritário</p>
-                  </li>
-                  <div class="buttonContainer">
-                    <a href="plans.html">Escolha Seu Plano</a>
-                  </div>
-                  <li>
-                    <p>
-                      Grátis por 1 mês, depois R$ 59,90 por mês. Oferta
-                      disponível apenas para quem nunca teve o Plano Ultimate.
-                      Sujeita a Termos.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="faqContainer">
-            <ul>
-              <li>
-                <h1><span>Perguntas</span> Frequentes</h1>
-                <p>
-                  Encontre respostas para todas as suas dúvidas sobre o
-                  StreamPlay e aproveite ao máximo a sua experiência!
-                </p>
-              </li>
-            </ul>
-            <div class="faqCard">
-              <button class="faqQuestion">
-                <h2>O que é a StreamPlay?</h2>
-                <i class="bx bx-plus toggle-icon"></i>
-              </button>
-              <div class="faqResponse">
-                <p>
-                  A StreamPlay é uma plataforma de streaming que oferece uma
-                  ampla variedade de filmes e séries para você assistir quando e
-                  onde quiser. Com uma interface amigável e conteúdo atualizado
-                  regularmente, a StreamPlay é a melhor escolha para
-                  entretenimento digital.
-                </p>
-              </div>
-            </div>
-            <div class="faqCard">
-              <button class="faqQuestion">
-                <h2>Quais planos estão disponíveis na StreamPlay?</h2>
-                <i class="bx bx-plus toggle-icon"></i>
-              </button>
-              <div class="faqResponse">
-                <p>
-                  A StreamPlay oferece três planos: Básico: Ideal para usuários
-                  que desejam assistir em um único dispositivo com qualidade
-                  padrão (HD). Premium: Permite assistir em até dois
-                  dispositivos simultaneamente em alta definição (Full HD).
-                  Ultimate: Oferece suporte para até quatro dispositivos
-                  simultaneamente em qualidade Ultra HD (4K).
-                </p>
-              </div>
-            </div>
-            <div class="faqCard">
-              <button class="faqQuestion">
-                <h2>Posso experimentar a StreamPlay antes de assinar?</h2>
-                <i class="bx bx-plus toggle-icon"></i>
-              </button>
-              <div class="faqResponse">
-                <p>
-                  Sim! Oferecemos um período de teste gratuito de 7 dias para
-                  novos usuários. Durante esse período, você terá acesso
-                  completo ao catálogo e poderá explorar todos os recursos antes
-                  de decidir por uma assinatura.
-                </p>
-              </div>
-            </div>
-            <div class="faqCard">
-              <button class="faqQuestion">
-                <h2>Em quais dispositivos posso assistir a StreamPlay?</h2>
-                <i class="bx bx-plus toggle-icon"></i>
-              </button>
-              <div class="faqResponse">
-                <p>
-                  Você pode assistir a StreamPlay em diversos dispositivos,
-                  incluindo: Smart TVs; Computadores e notebook (via navegador);
-                  Celulares e tablets (iOS e Android); Consoles de videogame
-                  (PlayStation e Xbox); Dispositivos de streaming como
-                  Chromecast.
-                </p>
-              </div>
-            </div>
-            <div class="faqCard">
-              <button class="faqQuestion">
-                <h2>Posso compartilhar minha conta com outras pessoas?</h2>
-                <i class="bx bx-plus toggle-icon"></i>
-              </button>
-              <div class="faqResponse">
-                <p>
-                  Depende do plano contratado: Básico: Apenas um dispositivo por
-                  vez. Premium: Permite até dois dispositivos simultaneamente.
-                  Ultimate: Permite até quatro dispositivos simultaneamente.
-                  Recomendamos que você compartilhe apenas com pessoas de
-                  confiança.
-                </p>
-              </div>
-            </div>
-            <div class="faqCard">
-              <button class="faqQuestion">
-                <h2>A StreamPlay tem conteúdo exclusivo?</h2>
-                <i class="bx bx-plus toggle-icon"></i>
-              </button>
-              <div class="faqResponse">
-                <p>
-                  Sim! A StreamPlay possui filmes e séries originais exclusivos,
-                  além de um catálogo diversificado de grandes estúdios. Nosso
-                  conteúdo exclusivo é atualizado regularmente para garantir que
-                  você sempre tenha algo novo para assistir.
-                </p>
-              </div>
+              <ul class="cardPlansContainer">
+                <li>
+                  <img src="./img/logo.png" alt="" />
+                </li>
+                <li>
+                  <h1>Premium</h1>
+                </li>
+                <li>
+                  <h2>R$ 0 por 2 meses</h2>
+                </li>
+                <li>
+                  <h3>Depois é só R$ 39,90/mês</h3>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Qualidade em Full HD</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>2 dispositivos simultâneos</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Catálogo completo</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Downloads offline</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Perfis personalizados</p>
+                </li>
+                <div class="buttonContainer">
+                  <a href="plans.html">Escolha Seu Plano</a>
+                </div>
+                <li>
+                  <p>
+                    Grátis por 2 meses, depois R$ 39,90 por mês. Oferta
+                    disponível apenas para quem nunca teve o Plano Premium.
+                    Sujeita a Termos.
+                  </p>
+                </li>
+              </ul>
+              <ul class="cardPlansContainer">
+                <li>
+                  <img src="./img/logo.png" alt="logo" />
+                </li>
+                <li>
+                  <h1>Ultimate</h1>
+                </li>
+                <li>
+                  <h2>R$ 0 por 1 mês</h2>
+                </li>
+                <li>
+                  <h3>Depois é só R$ 59,90/mês</h3>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Qualidade em 4K</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>4 dispositivos simultâneos</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Conteúdos exclusivos</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Lançamentos antecipados</p>
+                </li>
+                <li class="checkText">
+                  <i class="bx bx-check"></i>
+                  <p>Suporte prioritário</p>
+                </li>
+                <div class="buttonContainer">
+                  <a href="plans.html">Escolha Seu Plano</a>
+                </div>
+                <li>
+                  <p>
+                    Grátis por 1 mês, depois R$ 59,90 por mês. Oferta disponível
+                    apenas para quem nunca teve o Plano Ultimate. Sujeita a
+                    Termos.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -443,5 +339,9 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
