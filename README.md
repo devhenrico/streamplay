@@ -12,10 +12,10 @@
 
 ## 🛠️ Tecnologias utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- Boxicons (ícones)
-- AOS (biblioteca para animações com scrool)
-- Lottie (animações JSON)
-- Imagens locais simulando capas de filmes e séries
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Boxicons** (ícones)
+- **AOS** (biblioteca para animações com scrool)
+- **Lottie** (animações JSON)
+- **Imagens** locais simulando capas de **filmes** e **séries**
