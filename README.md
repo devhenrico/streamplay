@@ -8,7 +8,7 @@
 - Interface moderna e inspirada em serviços reais de streaming
 - Cards com imagens e exibição de filmes e séries separados por gênero (Ação, Comédia, Ficção Científica, Romance, Terror)
 - Layout minimalista e elegante
-- Animações com Lottie para dar vida à interface
+- Animações com AOS e Lottie para dar vida à interface
 
 ## 🛠️ Tecnologias utilizadas
 
