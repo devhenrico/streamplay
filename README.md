@@ -12,8 +12,8 @@
 
 ## 🛠️ Tecnologias utilizadas
 
-- **HTML5**
-- **CSS3**
+- **HTML**
+- **CSS**
 - **JavaScript**
 - **Boxicons** (ícones)
 - **AOS** (biblioteca para animações com scrool)
