@@ -3,7 +3,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const navItems = document.querySelectorAll(".nav-bar li");
   const sections = document.querySelectorAll("section[id]");
   const isPlansPage = window.location.pathname.includes("plans.html");
+  const navBar = document.querySelector(".nav-bar");
+  const menuToggle = document.querySelector(".menu-toggle");
   let clickedByUser = false;
+
+  const closeMobileMenu = () => {
+    navBar?.classList.remove("is-open");
+    menuToggle?.classList.remove("is-active");
+    menuToggle?.setAttribute("aria-expanded", "false");
+    menuToggle?.setAttribute("aria-label", "Abrir menu");
+    document.body.classList.remove("no-scroll");
+  };
+
+  const openMobileMenu = () => {
+    navBar?.classList.add("is-open");
+    menuToggle?.classList.add("is-active");
+    menuToggle?.setAttribute("aria-expanded", "true");
+    menuToggle?.setAttribute("aria-label", "Fechar menu");
+    document.body.classList.add("no-scroll");
+  };
+
+  if (menuToggle && navBar) {
+    menuToggle.addEventListener("click", () => {
+      if (navBar.classList.contains("is-open")) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    navBar.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMobileMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) {
+        closeMobileMenu();
+      }
+    });
+  }
 
   if (isPlansPage) {
     navItems.forEach((li) => li.classList.remove("active"));
@@ -107,6 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Animations Lottie
+  if (typeof lottie === "undefined") {
+    return;
+  }
+
   const arrowAnimation = document.getElementById("arrow-animation");
   if (arrowAnimation) {
     lottie.loadAnimation({
